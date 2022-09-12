@@ -15,3 +15,12 @@ if (!output) throw "Output container not found.";
 
 //@ts-check
 // your code starts after this line
+var evenArray = [];
+var userInput = Number(prompt("Please enter the Number"));
+var even = 0;
+while (even <= userInput) {
+	evenArray[even] = even * 2;
+	even = even + 1;
+}
+alert(evenArray);
+var even = 0;

@@ -16,32 +16,6 @@ if (!output) throw "Output container not found.";
 //@ts-check
 // your code starts after this line
 
-//var evenArray = [];
-//var userInput = Number(prompt("Please enter the Number"));
-//var even = 0;
-//while (even <= userInput) {
-//evenArray[even] = even * 2;
-//even = even + 1;
-//}
-//alert(evenArray);
-//var even = 0;
-
-//let number = 10;
-//let x = 0;
-//while (x < number) {
-//console.log((x += 2));
-//}
-
-const MAX_N = 10;
-
-for (let n = 0; n <= MAX_N; n += 2) {
-	output.append(n);
-	console.log(n);
-}
-
-console.log(0);
-console.log(2);
-console.log(4);
-console.log(6);
-console.log(8);
-console.log(10);
+let n = 0;
+for (let n = 0; n <= 10; n += 2) console.log(n);
+output.append(n) += ","

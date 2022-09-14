@@ -16,6 +16,6 @@ if (!output) throw "Output container not found.";
 //@ts-check
 // your code starts after this line
 
-let n = 0;
+const n = 0;
 for (let n = 0; n <= 10; n += 2) console.log(n);
-output.append(n) += ","
+output.append(n);

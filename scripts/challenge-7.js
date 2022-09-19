@@ -14,3 +14,12 @@ if (!output) throw "Output container not found.";
 
 //@ts-check
 // your code starts after this line
+
+
+Math.abs(x);
+console.log(Math.abs(8) * -1);
+console.log(Math.abs(-8) * -1);
+console.log(8 * -1);
+console.log(-8 * -1);
+-8 - 8 - 8;
+8;

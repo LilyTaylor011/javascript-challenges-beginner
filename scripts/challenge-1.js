@@ -18,4 +18,3 @@ if (!output) throw "Output container not found.";
 
 const n = 0;
 for (let n = 0; n <= 10; n += 2) console.log(n);
-output.append(n);

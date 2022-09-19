@@ -14,3 +14,33 @@ if (!output) throw "Output container not found.";
 
 //@ts-check
 // your code starts after this line
+
+let a = [11, 2, 3, -22, 41];
+function bigSmallSorter(arr) {
+	// Sort a copy of the passed in array from least to most.
+	let sortedArr = [...arr.sort((n, k) => n - k)];
+	let newArr = [];
+	let flip = true;
+
+	for (let i of arr) {
+		let temp = flip
+			? // Take first element of the sorted array
+			  sortedArr.shift()
+			: // Take the last element of the sorted array
+			  sortedArr.pop();
+
+		// Add the newest value to the value that is ultimately returned
+		newArr.push(temp);
+
+		// Flip this so the next iteration takes from the other
+		// end of the array
+		flip = !flip;
+	}
+
+	// Profit
+	return newArr;
+}
+
+console.log(bigSmallSorter(a));
+
+//>[ -22, 41, 2, 11, 3 ]

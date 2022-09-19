@@ -16,3 +16,6 @@ if (!output) throw "Output container not found.";
 
 //@ts-check
 // your code starts after this line
+// take input from the user
+
+//code is in html file

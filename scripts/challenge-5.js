@@ -19,3 +19,15 @@ if (!output) throw "Output container not found.";
 
 //@ts-check
 // your code starts after this line
+// Java Program for Reversing an array using StringBuilder
+
+const reverseArray = (arr) => {
+	let newArr = [];
+	for (let i = arr.length - 1; i >= 0; i--) {
+		newArr.push(arr[i]);
+	}
+	return newArr;
+};
+
+const arr = ["red.", "in", "girl", "love", "I"];
+console.log(reverseArray(arr));

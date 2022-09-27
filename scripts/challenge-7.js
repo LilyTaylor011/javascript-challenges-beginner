@@ -15,11 +15,8 @@ if (!output) throw "Output container not found.";
 //@ts-check
 // your code starts after this line
 
-
-Math.abs(x);
-console.log(Math.abs(8) * -1);
-console.log(Math.abs(-8) * -1);
-console.log(8 * -1);
-console.log(-8 * -1);
--8 - 8 - 8;
-8;
+var array = [18, -42, 21, 6, -50];
+array = array.filter(function (x) {
+	return x > -1;
+});
+console.log(array); // [18, 21, 6]

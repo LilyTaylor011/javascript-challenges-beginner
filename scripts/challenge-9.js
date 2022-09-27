@@ -14,3 +14,18 @@ if (!output) throw "Output container not found.";
 
 //@ts-check
 // your code starts after this line
+
+// Define quarter here.
+var quarter = function (n) {
+	if (n / 4) {
+		return true;
+	} else {
+		return false;
+	}
+};
+
+if (quarter(4) === 1) {
+	console.log("The statement is true.");
+} else {
+	console.log("The statement is false.");
+}
